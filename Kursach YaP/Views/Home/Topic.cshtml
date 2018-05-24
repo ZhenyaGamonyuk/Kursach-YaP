@@ -1,0 +1,102 @@
+﻿@using Kursach_YaP.Models
+@model Topic
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container container-div form">
+    <div class="container-fluid container-topic"><h3>Тема: @Model.Name</h3></div>
+    <div class="desc">
+        @foreach (Text t in Model.Texts)
+            {
+            <h5>@t.Title</h5>
+            <p>@t.Plot</p>
+            <div class="row buttons line-view">
+                <div class="col-12 buttons">
+                    <a href="/Home/Edit?id=@t.Id&h=text"><div class="edit-but-ligth-right">Изменить</div></a>
+                    <a href="/Home/Delete?id=@t.Id&h=text"><div class="edit-but-ligth-left">Удалить</div></a>
+                 </div>
+            </div>
+        }
+        @foreach (Axiom t in Model.Axioms)
+            {
+            <h5>@t.Name</h5>
+            <p>@t.Descriprion</p>
+            <div class="row buttons line-view">
+                <div class="col-12 buttons">
+                    <a href="/Home/Edit?id=@t.Id&h=theor"><div class="edit-but-ligth-right">Изменить</div></a>
+                    <a href="/Home/Delete?id=@t.Id&h=theor"><div class="edit-but-ligth-left">Удалить</div></a>
+                </div>
+           </div>
+        }
+        @foreach (Theorem t in Model.Theorems)
+            {
+            <h5>@t.Name</h5>
+            <p>@t.Descriprion</p>
+            <div class="row buttons line-view">
+                <div class="col-12 buttons">
+                    <a href="/Home/Edit?id=@t.Id&h=axiom"><div class="edit-but-ligth-right">Изменить</div></a>
+                    <a href="/Home/Delete?id=@t.Id&h=axiom"><div class="edit-but-ligth-left">Удалить</div></a>
+                </div>
+            </div>
+        }
+        @foreach (Professor t in Model.Professors)
+            {
+            <h5>@t.Name</h5>
+            <p>@t.Descriprion</p>
+            <div class="row buttons line-view">
+                <div class="col-12 buttons">
+                    <a href="/Home/Edit?id=@t.Id&h=sinc"><div class="edit-but-ligth-right">Изменить</div></a>
+                    <a href="/Home/Delete?id=@t.Id&h=sinc"><div class="edit-but-ligth-left">Удалить</div></a>
+                </div>
+            </div>
+        }
+        @foreach (Lemma t in Model.Lemmes)
+            {
+            <h5>@t.Name</h5>
+            <p>@t.Descriprion</p>
+            <div class="row buttons line-view">
+                <div class="col-12 buttons">
+                    <a href="/Home/Edit?id=@t.Id&h=lemma"><div class="edit-but-ligth-right">Изменить</div></a>
+                    <a href="/Home/Delete?id=@t.Id&h=lemma"><div class="edit-but-ligth-left">Удалить</div></a>
+                </div>
+            </div>
+        }
+        @foreach (Formula t in Model.Formuls)
+            {
+            <h5>@t.Name</h5>
+            <p class="image">@Html.Raw("<img src=\"data:image/jpeg;base64," + Convert.ToBase64String(t.ImageData) + "\" />")</p>
+            <p>@t.Descriprion</p>
+            <div class="row buttons line-view">
+                <div class="col-12 buttons">
+                    <a href="/Home/Edit?id=@t.Id&h=form"><div class="edit-but-ligth-right">Изменить</div></a>
+                    <a href="/Home/Delete?id=@t.Id&h=form"><div class="edit-but-ligth-left">Удалить</div></a>
+                </div>
+            </div>
+        }
+        @foreach (Task t in Model.Tasks)
+            {
+            <h5>@t.Name</h5>
+            <p>@Html.Raw("<img src=\"data:image/jpeg;base64," + Convert.ToBase64String(t.ImageData) + "\" />")</p>
+            <p>@t.Descriprion</p>
+            <div class="row buttons line-view">
+                <div class="col-12 buttons">
+                    <a href="/Home/Edit?id=@t.Id&h=task"><div class="edit-but-ligth-right">Изменить</div></a>
+                    <a href="/Home/Delete?id=@t.Id&h=task"><div class="edit-but-ligth-left">Удалить</div></a>
+                </div>
+            </div>
+        }
+    </div>
+    <div>
+        <div class="row buttons-edit">
+            <div class="col-12 buttons-edit">
+                <a href="/Home/Add?id=@Model.Id&h=text"><div class="btn btn-info edit-button">Добавить текст</div></a>
+                <a href="/Home/Add?id=@Model.Id&h=theor"><div class="btn btn-info edit-button">Добавить теорему</div></a>
+                <a href="/Home/Add?id=@Model.Id&h=axiom"><div class="btn btn-info edit-button">Добавить аксиому</div></a>
+                <a href="/Home/Add?id=@Model.Id&h=lemma"><div class="btn btn-info edit-button">Добавить лемму</div></a>
+                <a href="/Home/Add?id=@Model.Id&h=sinc"><div class="btn btn-info edit-button">Добавить ученого</div></a>
+                <a href="/Home/Add?id=@Model.Id&h=form"><div class="btn btn-info edit-button">Добавить формулу</div></a>
+                <a href="/Home/Add?id=@Model.Id&h=task"><div class="btn btn-info edit-button">Добавить задачу</div></a>
+            </div>
+        </div>
+    </div>

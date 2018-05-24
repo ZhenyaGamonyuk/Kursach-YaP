@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container container-div form">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-title">
+                        <h4>Дисциплины</h4>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="form-title">
+                        <h4>Добавить дисциплину</h4>
+                    </div>                 
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-sm-3 line">
+                @foreach (var b in ViewBag.Disciplines)
+                {
+                <a href="/Home/Discipline/@b.Id">
+                    <div class="btn btn-primary nav-button">@b.Name</div>
+                </a>
+                }
+            </div>
+            <div class="col-sm-9">
+                <form method="post" action="">
+                    <div class="form-group">
+                        <h5><label for="Name">Название:</label></h5>
+                        <input class="form-control form-control-bottom" type="text" name="Name" />
+                        <h5><label for="Descripion">Описание:</label></h5>
+                        <textarea rows="7" class="form-control form-control-bottom" type="text" name="Description"></textarea>
+                        <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>

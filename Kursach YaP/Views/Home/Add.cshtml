@@ -1,0 +1,196 @@
+﻿@using Kursach_YaP.Models
+@model TopicElements
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="container container-div form">
+        @if (ViewBag.Temp == "text")
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-title" style="text-align:center">
+                        <h4>Добавить текст</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <input type="hidden" value="@ViewBag.Layout" name="Text.Layout" />
+                            <input type="hidden" value="@Model.Topic.Id" name="TopicId" />
+                            <input type="hidden" value="@Model.Topic.Id" name="Text.TopicId" />
+                            <h5><label for="Text.Title">Введите оглавление:</label></h5>
+                            <input class="form-control form-control-bottom" type="text" name="Text.Title" />
+                            <h5><label for="Text.Plot">Введите текст:</label></h5>
+                            <textarea rows="7" class="form-control form-control-bottom" type="text" name="Text.Plot"></textarea>
+                            <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        @if (ViewBag.Temp == "theor")
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-title" style="text-align:center">
+                        <h4>Добавить теорему</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <input type="hidden" value="@ViewBag.Layout" name="Teorem.Layout" />
+                            <input type="hidden" value="@Model.Topic.Id" name="TopicId" />
+                            <input type="hidden" value="@Model.Topic.Id" name="Teorem.TopicId" />
+                            <h5><label for="Teorem.Name">Введите название:</label></h5>
+                            <input class="form-control form-control-bottom" type="text" name="Teorem.Name" />
+                            <h5><label for="Theorem.Descriprion">Введите описание:</label></h5>
+                            <textarea rows="7" class="form-control form-control-bottom" type="text" name="Theorem.Descriprion"></textarea>
+                            <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        @if (ViewBag.Temp == "axiom")
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-title" style="text-align:center">
+                        <h4>Добавить аксиому</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <input type="hidden" value="@ViewBag.Layout" name="Axiom.Layout" />
+                            <input type="hidden" value="@Model.Topic.Id" name="TopicId" />
+                            <input type="hidden" value="@Model.Topic.Id" name="Axiom.TopicId" />
+                            <h5><label for="Axiom.Name">Введите название:</label></h5>
+                            <input class="form-control form-control-bottom" type="text" name="Axiom.Name" />
+                            <h5><label for="Axiom.Descriprion">Введите описание:</label></h5>
+                            <textarea rows="7" class="form-control form-control-bottom" type="text" name="Axiom.Descriprion"></textarea>
+                            <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        @if (ViewBag.Temp == "lemma")
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-title" style="text-align:center">
+                        <h4>Добавить лемму</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <input type="hidden" value="@ViewBag.Layout" name="Lemma.Layout" />
+                            <input type="hidden" value="@Model.Topic.Id" name="TopicId" />
+                            <input type="hidden" value="@Model.Topic.Id" name="Lemma.TopicId" />
+                            <h5><label for="Lemma.Name">Введите название:</label></h5>
+                            <input class="form-control form-control-bottom" type="text" name="Lemma.Name" />
+                            <h5><label for="Lemma.Descriprion">Введите описание:</label></h5>
+                            <textarea rows="7" class="form-control form-control-bottom" type="text" name="Lemma.Descriprion"></textarea>
+                            <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        @if (ViewBag.Temp == "sinc")
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-title" style="text-align:center">
+                        <h4>Добавить сведения об ученом</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <input type="hidden" value="@ViewBag.Layout" name="Professor.Layout" />
+                            <input type="hidden" value="@Model.Topic.Id" name="TopicId" />
+                            <input type="hidden" value="@Model.Topic.Id" name="Professor.TopicId" />
+                            <h5><label for="Professor.Name">Введите название:</label></h5>
+                            <input class="form-control form-control-bottom" type="text" name="Professor.Name" />
+                            <h5><label for="Professor.Descriprion">Введите описание:</label></h5>
+                            <textarea rows="7" class="form-control form-control-bottom" type="text" name="Professor.Descriprion"></textarea>
+                            <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p>Добавить сведения об ученом:</p>
+        }
+        @if (ViewBag.Temp == "form")
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-title" style="text-align:center">
+                        <h4>Добавить формулу</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" enctype="multipart/form-data" action="">
+                        <div class="form-group">
+                            <input type="hidden" value="@ViewBag.Layout" name="Formula.Layout" />
+                            <input type="hidden" value="@Model.Topic.Id" name="TopicId" />
+                            <input type="hidden" value="@Model.Topic.Id" name="Formula.TopicId" />
+                            <h5><label for="Formula.Name">Введите название:</label></h5>
+                            <input class="form-control form-control-bottom" type="text" name="Formula.Name" />
+                            <h5><label for="Image">Добавьте формулу:</label></h5>
+                            <input class="form-control form-control-bottom" type="file" name="Image" />
+                            <h5><label for="Formula.Descriprion">Введите описание:</label></h5>
+                            <textarea rows="7" class="form-control form-control-bottom" type="text" name="Formula.Descriprion"></textarea>
+                            <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        @if (ViewBag.Temp == "task")
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-title" style="text-align:center">
+                        <h4>Добавить задачу</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form method="post" enctype="multipart/form-data" action="">
+                        <div class="form-group">
+                            <input type="hidden" value="@ViewBag.Layout" name="Task.Layout" />
+                            <input type="hidden" value="@Model.Topic.Id" name="TopicId" />
+                            <input type="hidden" value="@Model.Topic.Id" name="Task.TopicId" />
+                            <h5><label for="Task.Name">Введите название:</label></h5>
+                            <input class="form-control form-control-bottom" type="text" name="Task.Name" />
+                            <h5><label for="Image">Добавьте изображение:</label></h5>
+                            <input class="form-control form-control-bottom" type="file" name="Image" />
+                            <h5><label for="Task.Descriprion">Введите описание:</label></h5>
+                            <textarea rows="7" class="form-control form-control-bottom" type="text" name="Task.Descriprion"></textarea>
+                            <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }             
+    </div>

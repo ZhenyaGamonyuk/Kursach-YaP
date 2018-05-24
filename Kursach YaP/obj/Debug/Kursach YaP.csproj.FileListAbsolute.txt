@@ -1,0 +1,68 @@
+D:\Kursach YaP\Kursach YaP\bin\roslyn\csc.exe
+D:\Kursach YaP\Kursach YaP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kursach YaP\Kursach YaP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kursach YaP\Kursach YaP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kursach YaP\Kursach YaP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kursach YaP\Kursach YaP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kursach YaP\Kursach YaP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kursach YaP\Kursach YaP\bin\roslyn\System.Collections.Immutable.dll
+D:\Kursach YaP\Kursach YaP\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kursach YaP\Kursach YaP\bin\roslyn\vbc.exe
+D:\Kursach YaP\Kursach YaP\bin\roslyn\VBCSCompiler.exe
+D:\Kursach YaP\Kursach YaP\bin\roslyn\VBCSCompiler.exe.config
+D:\Kursach YaP\Kursach YaP\bin\Kursach YaP.dll.config
+D:\Kursach YaP\Kursach YaP\bin\Kursach YaP.dll
+D:\Kursach YaP\Kursach YaP\bin\Kursach YaP.pdb
+D:\Kursach YaP\Kursach YaP\bin\Antlr3.Runtime.dll
+D:\Kursach YaP\Kursach YaP\bin\EntityFramework.dll
+D:\Kursach YaP\Kursach YaP\bin\EntityFramework.SqlServer.dll
+D:\Kursach YaP\Kursach YaP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kursach YaP\Kursach YaP\bin\Microsoft.Web.Infrastructure.dll
+D:\Kursach YaP\Kursach YaP\bin\MySql.Data.dll
+D:\Kursach YaP\Kursach YaP\bin\MySql.Data.Entity.EF6.dll
+D:\Kursach YaP\Kursach YaP\bin\Newtonsoft.Json.dll
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Helpers.dll
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Mvc.dll
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Optimization.dll
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Razor.dll
+D:\Kursach YaP\Kursach YaP\bin\System.Web.WebPages.Deployment.dll
+D:\Kursach YaP\Kursach YaP\bin\System.Web.WebPages.dll
+D:\Kursach YaP\Kursach YaP\bin\System.Web.WebPages.Razor.dll
+D:\Kursach YaP\Kursach YaP\bin\WebGrease.dll
+D:\Kursach YaP\Kursach YaP\bin\EntityFramework.xml
+D:\Kursach YaP\Kursach YaP\bin\EntityFramework.SqlServer.xml
+D:\Kursach YaP\Kursach YaP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kursach YaP\Kursach YaP\bin\MySql.Data.xml
+D:\Kursach YaP\Kursach YaP\bin\MySql.Data.Entity.EF6.xml
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Helpers.xml
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Mvc.xml
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Optimization.xml
+D:\Kursach YaP\Kursach YaP\bin\System.Web.Razor.xml
+D:\Kursach YaP\Kursach YaP\bin\System.Web.WebPages.xml
+D:\Kursach YaP\Kursach YaP\bin\System.Web.WebPages.Deployment.xml
+D:\Kursach YaP\Kursach YaP\bin\System.Web.WebPages.Razor.xml
+D:\Kursach YaP\Kursach YaP\bin\Antlr3.Runtime.pdb
+D:\Kursach YaP\Kursach YaP\bin\Newtonsoft.Json.xml
+D:\Kursach YaP\Kursach YaP\bin\ru\System.Web.Helpers.resources.dll
+D:\Kursach YaP\Kursach YaP\bin\ru\System.Web.Mvc.resources.dll
+D:\Kursach YaP\Kursach YaP\bin\ru\System.Web.Optimization.resources.dll
+D:\Kursach YaP\Kursach YaP\bin\ru\System.Web.Razor.resources.dll
+D:\Kursach YaP\Kursach YaP\bin\ru\System.Web.WebPages.resources.dll
+D:\Kursach YaP\Kursach YaP\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Kursach YaP\Kursach YaP\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach YaP.csprojResolveAssemblyReference.cache
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach YaP.dll
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach YaP.pdb
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach YaP.csproj.GenerateResource.Cache
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.AddEndVersion.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.AxiomTemp.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.AxiomNo.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.Axiom.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.AddText.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.AddText1.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.TextReq.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.AddLayout.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.AddTexts.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.Image.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.Images.resources
+D:\Kursach YaP\Kursach YaP\obj\Debug\Kursach_YaP.Migrations.Imagees.resources

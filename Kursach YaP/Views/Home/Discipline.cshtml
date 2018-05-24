@@ -1,0 +1,47 @@
+﻿@using Kursach_YaP.Models
+@model Discipline
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="container container-div form">
+    <div class="row">
+        <div class="col-sm-3 line">
+            <div class="form-title">
+                <h4>Темы</h4>
+            </div>
+            @if (Model.Topics != null)
+            {
+                foreach (var t in Model.Topics)
+                {
+                    <a href="/Home/TopicView/@t.Id">
+                        <div class="btn btn-primary nav-button">@t.Name</div>
+                    </a>
+                }
+            }
+            else
+            {
+                <p>Раздел пуст</p>
+            }
+        </div>
+        <div class="col-sm-9">
+            <div class="form-title">
+                <h4>Дисциплина: @Model.Name</h4>
+            </div>
+            <div class="desc">
+                @Model.Description;
+            </div>
+            <div class="form-title">
+                <h4>Добавить тему</h4>
+            </div>
+            <form method="post" action="">
+                <input type="hidden" value="@Model.Id" name="DisciplineId" />
+                <h5><label for="Name">Название:</label></h5>
+                <input class="form-control form-control-bottom" type="text" name="Name" />
+                <input class="btn btn-info nav-button right" type="submit" value="Добавить" />
+                <input class="btn btn-info nav-button left" type="submit" value="Удалить" />
+            </form>
+        </div>
+    </div>
+</div>

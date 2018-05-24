@@ -1,0 +1,51 @@
+﻿@using Kursach_YaP.Models
+@model Topic
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container container-div form">
+        <div class="container-fluid container-topic"><h3>Тема: @Model.Name</h3></div>
+        <div class="desc">
+            @foreach (Text t in Model.Texts)
+            {
+                <h5>@t.Title</h5>
+                <p>@t.Plot</p>
+            }
+            @foreach (Axiom t in Model.Axioms)
+            {
+                <h5>@t.Name</h5>
+                <p>@t.Descriprion</p>
+            }
+            @foreach (Theorem t in Model.Theorems)
+            {
+                <h5>@t.Name</h5>
+                <p>@t.Descriprion</p>
+            }
+            @foreach (Professor t in Model.Professors)
+            {
+                <h5>@t.Name</h5>
+                <p>@t.Descriprion</p>
+            }
+            @foreach (Lemma t in Model.Lemmes)
+            {
+                <h5>@t.Name</h5>
+                <p>@t.Descriprion</p>
+            }
+            @foreach (Formula t in Model.Formuls)
+            {
+                <h5>@t.Name</h5>
+                <p class="image">@Html.Raw("<img src=\"data:image/jpeg;base64," + Convert.ToBase64String(t.ImageData) + "\" />")</p>
+                <p>@t.Descriprion</p>
+            }
+            @foreach (Task t in Model.Tasks)
+            {
+                <h5>@t.Name</h5>
+                <p>@t.Descriprion</p>
+                <p>@Html.Raw("<img src=\"data:image/jpeg;base64," + Convert.ToBase64String(t.ImageData) + "\" />")</p>
+            }
+        </div>
+        <a href="/Home/Topic/@Model.Id">
+            <div class="btn btn-primary nav-button">Изменить</div>
+        </a>
+    </div>
